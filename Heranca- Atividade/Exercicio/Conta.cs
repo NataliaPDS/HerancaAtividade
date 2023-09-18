@@ -13,15 +13,27 @@ namespace Heranca__Atividade.Exercicio
         public string TitularConta { get; set;}
 
         public double SaldoConta { get; set;}
-
-        public virtual void Sacar()
+        
+        public Conta()
         {
-            Console.WriteLine("Digite o valor do saque: ");
-            double saque = Convert.ToDouble(Console.ReadLine());
 
-            if(saque <= SaldoConta) 
+        }
+        public Conta(int numeroConta, string agencia, string titularConta, double saldoConta)
+        {
+            NumeroConta = numeroConta;
+            Agencia = agencia;
+            TitularConta = titularConta;
+            SaldoConta = saldoConta;
+        }   
+
+        public virtual void Sacar(double valor1) //saque
+        {
+         
+
+            if(valor1 <= SaldoConta) 
             {
-                Console.WriteLine($"Saque de {saque} aprovado!");
+                double sub = SaldoConta - valor1;   
+                Console.WriteLine($"Saque de {sub} aprovado!");
             
             }
             else
@@ -29,13 +41,9 @@ namespace Heranca__Atividade.Exercicio
                 Console.WriteLine($"Saldo não suficiente para saque!");
             }
         }
-        public override void Depositar()
+        public void Depositar(double valor2)//depositar
         {
-
-            Console.WriteLine("Digite o valor para depositar: ");
-            double depositar = Convert.ToDouble(Console.ReadLine());
-
-            double soma = depositar + SaldoConta;
+            double soma = valor2 + SaldoConta;
             Console.WriteLine($"Saldo atual: {soma}");
         }
 

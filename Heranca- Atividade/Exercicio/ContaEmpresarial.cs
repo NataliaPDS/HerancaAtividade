@@ -25,26 +25,15 @@ namespace Heranca__Atividade.Exercicio
            
         }
 
-        public void Emprestimo () //feito
+        public void Emprestimo (double valor3) //feito //emprestimo
         {
-            Console.WriteLine("Digite o valor do emprestimo: ");
-            double emprestimo = Convert.ToDouble(Console.ReadLine());
-          
-
-
-            if (emprestimo <= LimiteEmprestimo) //menor ou igual a 5000 
+           
+            if (valor3 <= LimiteEmprestimo - TotalEmprestimo) //menor ou igual a 5000 
             {
 
-                if (SaldoConta >= emprestimo) 
-                {
-                    double a = emprestimo + TotalEmprestimo;
-                    Console.WriteLine($"O valor de {a} foi realizado com sucessso!");
-
-                }
-                else
-                {
-                    Console.WriteLine("Saldo insuficiente para emprestimo!");
-                }
+                SaldoConta += valor3;
+                valor3 += TotalEmprestimo;
+                    Console.WriteLine($"O valor de {SaldoConta} foi realizado com sucessso!");
 
             }
             else
@@ -52,22 +41,23 @@ namespace Heranca__Atividade.Exercicio
                 Console.WriteLine("Não é possivel realizar o emprestimo requerido!");
             }
         }
-        public override void Sacar() //feio //voltar aqui
+        public override void Sacar(double valor4) //feio //voltar aqui
         {
-            Console.WriteLine("Digite o valor do saque: ");
-            double saque = Convert.ToDouble(Console.ReadLine());
+         
 
-            if (saque <= SaldoConta)
+            if (valor4 <= SaldoConta) //se o valor inserido for menor que o saldo da conta
             {
-                if (saque >= LimiteEmprestimo) //5000.00
+                if (valor4 >= LimiteEmprestimo) //5000.00
                 {
-                    double taxa = LimiteEmprestimo + Anuidade;
-                    Console.WriteLine($"O saque de {taxa} foi concluido com sucesso!");
+                    double taxa = valor4 + 5;
+                    double a = taxa - SaldoConta;
+                    Console.WriteLine($"O saque de {a} foi concluido com sucesso!");
 
                 }
                 else
                 {
-                    Console.WriteLine($"O saque de {saque} foi concluido com sucesso!");
+                    double sub = SaldoConta - valor4;
+                    Console.WriteLine($"O saque de {sub} foi concluido com sucesso!");
                 }
 
             }
