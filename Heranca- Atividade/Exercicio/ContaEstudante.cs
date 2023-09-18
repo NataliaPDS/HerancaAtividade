@@ -33,7 +33,7 @@ namespace Heranca__Atividade.Exercicio
 
             if (valor5 <= soma) //soma menor que o valor do sacar
             { 
-               double sub = valor5 - soma;
+                double sub = valor5 - soma;
                 Console.WriteLine($"O saque de {sub} foi concluido com sucesso!");
             
             }

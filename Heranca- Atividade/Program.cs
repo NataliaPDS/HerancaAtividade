@@ -15,7 +15,6 @@ public class Program
 
             if(opcao == 1)
             {
-
                 Conta c = new Conta();
                 c.NumeroConta = 1;
                 c.Agencia = "1111";

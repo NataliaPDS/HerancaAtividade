@@ -29,11 +29,10 @@ namespace Heranca__Atividade.Exercicio
         public virtual void Sacar(double valor1) //saque
         {
          
-
             if(valor1 <= SaldoConta) 
             {
-                double sub = SaldoConta - valor1;   
-                Console.WriteLine($"Saque de {sub} aprovado!");
+                SaldoConta = SaldoConta - valor1;   
+                Console.WriteLine($"Saque de {SaldoConta} aprovado!");
             
             }
             else
@@ -43,8 +42,17 @@ namespace Heranca__Atividade.Exercicio
         }
         public void Depositar(double valor2)//depositar
         {
-            double soma = valor2 + SaldoConta;
-            Console.WriteLine($"Saldo atual: {soma}");
+
+            if(valor2 >= 0)
+            {
+                double soma = valor2 + SaldoConta;
+                Console.WriteLine($"Saldo atual: {soma}");
+            }
+            else
+            {
+                Console.WriteLine("Operação inválida!");
+            }
+            
         }
 
     }
