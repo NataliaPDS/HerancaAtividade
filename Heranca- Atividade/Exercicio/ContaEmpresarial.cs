@@ -16,12 +16,12 @@ namespace Heranca__Atividade.Exercicio
         {
 
         }
-        public ContaEmpresarial(double anuidade, double limiteEmprestimo, double totalEmprestimo, int numeroConta,
+        public ContaEmpresarial(double anuidade, double limiteEmprestimo, int numeroConta,
        string agencia, string titularConta, double saldoConta) : base(numeroConta, agencia, titularConta, saldoConta)
         {
             Anuidade = anuidade;
             LimiteEmprestimo = limiteEmprestimo;
-            TotalEmprestimo = totalEmprestimo;
+            
            
         }
 
@@ -56,8 +56,8 @@ namespace Heranca__Atividade.Exercicio
                 }
                 else
                 {
-                    double sub = SaldoConta - valor4;
-                    Console.WriteLine($"\nO saque de {sub} foi concluido com sucesso!\n");
+                    SaldoConta -= valor4;
+                    Console.WriteLine($"\nO saque de {SaldoConta} foi concluido com sucesso!\n");
                 }
 
             }

@@ -29,17 +29,18 @@ namespace Heranca__Atividade.Exercicio
         public override void Sacar(double valor5)
         {
 
-            double soma = SaldoConta + LimiteChequeEspecial;
+            //double soma = SaldoConta + LimiteChequeEspecial;
+            //if (valor5 <= soma)
 
-            if (valor5 <= soma) //soma menor que o valor do sacar
+            if (valor5 <= SaldoConta + LimiteChequeEspecial) //soma menor que o valor do sacar
             { 
-                double sub = valor5 - soma;
-                Console.WriteLine($"\nO saque de {sub} foi concluido com sucesso!\n");
+                 SaldoConta -= valor5;
+                //Console.WriteLine($"\nO saque de {sub} foi concluido com sucesso!\n");
             
             }
             else
             {
-                Console.WriteLine($"\nNão foi possivel concluir este saque!\n");
+                Console.WriteLine($"\nNão foi possivel concluir este saque!");
             }
 
             
