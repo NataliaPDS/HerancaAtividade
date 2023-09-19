@@ -28,42 +28,42 @@ namespace Heranca__Atividade.Exercicio
         public void Emprestimo (double valor3) //feito //emprestimo
         {
            
-            if (valor3 <= LimiteEmprestimo - TotalEmprestimo) //menor ou igual a 5000 
+            if (valor3 <= LimiteEmprestimo - TotalEmprestimo)  
             {
 
                 SaldoConta += valor3;
                 valor3 += TotalEmprestimo;
-                    Console.WriteLine($"O valor de {SaldoConta} foi realizado com sucessso!");
+                Console.WriteLine($"\nO valor de {SaldoConta} foi realizado com sucessso!\n");
 
             }
             else
             {
-                Console.WriteLine("Não é possivel realizar o emprestimo requerido!");
+                Console.WriteLine("\nNão é possivel realizar o emprestimo requerido!\n");
             }
         }
         public override void Sacar(double valor4) //feio //voltar aqui
         {
          
-
             if (valor4 <= SaldoConta) //se o valor inserido for menor que o saldo da conta
             {
-                if (valor4 >= LimiteEmprestimo) //5000.00
+                if (valor4 >= 5000) //5000.00
                 {
-                    double taxa = valor4 + 5;
-                    double a = taxa - SaldoConta;
-                    Console.WriteLine($"O saque de {a} foi concluido com sucesso!");
+                    double taxa = 5;
+                    SaldoConta -= valor4;
+                    SaldoConta -= taxa;
+                    Console.WriteLine($"\nO saque de {valor4} foi concluido com sucesso!\n Saldo Total: {SaldoConta}\n");
 
                 }
                 else
                 {
                     double sub = SaldoConta - valor4;
-                    Console.WriteLine($"O saque de {sub} foi concluido com sucesso!");
+                    Console.WriteLine($"\nO saque de {sub} foi concluido com sucesso!\n");
                 }
 
             }
             else
             {
-                Console.WriteLine("Não é possivel realizar o emprestimo requerido!");
+                Console.WriteLine("\nNão é possivel realizar o emprestimo requerido!\n");
             }
              
         }

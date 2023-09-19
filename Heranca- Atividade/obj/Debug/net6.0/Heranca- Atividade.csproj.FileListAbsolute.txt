@@ -1,0 +1,15 @@
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\bin\Debug\net6.0\Heranca- Atividade.exe
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\bin\Debug\net6.0\Heranca- Atividade.deps.json
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\bin\Debug\net6.0\Heranca- Atividade.runtimeconfig.json
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\bin\Debug\net6.0\Heranca- Atividade.dll
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\bin\Debug\net6.0\Heranca- Atividade.pdb
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\obj\Debug\net6.0\Heranca- Atividade.csproj.AssemblyReference.cache
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\obj\Debug\net6.0\Heranca- Atividade.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\obj\Debug\net6.0\Heranca- Atividade.AssemblyInfoInputs.cache
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\obj\Debug\net6.0\Heranca- Atividade.AssemblyInfo.cs
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\obj\Debug\net6.0\Heranca- Atividade.csproj.CoreCompileInputs.cache
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\obj\Debug\net6.0\Heranca- Atividade.dll
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\obj\Debug\net6.0\refint\Heranca- Atividade.dll
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\obj\Debug\net6.0\Heranca- Atividade.pdb
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\obj\Debug\net6.0\Heranca- Atividade.genruntimeconfig.cache
+C:\Users\2022102020084\Documents\2B INFORMATICA\Programação\3 Bimestre\Heranca- Atividade\Heranca- Atividade\obj\Debug\net6.0\ref\Heranca- Atividade.dll

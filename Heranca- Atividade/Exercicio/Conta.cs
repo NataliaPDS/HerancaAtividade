@@ -32,12 +32,12 @@ namespace Heranca__Atividade.Exercicio
             if(valor1 <= SaldoConta) 
             {
                 SaldoConta = SaldoConta - valor1;   
-                Console.WriteLine($"Saque de {SaldoConta} aprovado!");
+                Console.WriteLine($"\nSaque de {valor1} foi aprovado! \nSaldo total atual: {SaldoConta}\n");
             
             }
             else
             {
-                Console.WriteLine($"Saldo não suficiente para saque!");
+                Console.WriteLine($"\nNão é possivel fazer saque com este valor de saldo!\n");
             }
         }
         public void Depositar(double valor2)//depositar
@@ -45,12 +45,12 @@ namespace Heranca__Atividade.Exercicio
 
             if(valor2 >= 0)
             {
-                double soma = valor2 + SaldoConta;
-                Console.WriteLine($"Saldo atual: {soma}");
+                SaldoConta += valor2;
+                Console.WriteLine($"\nSaldo atual: {SaldoConta}\n");
             }
             else
             {
-                Console.WriteLine("Operação inválida!");
+                Console.WriteLine("\nOperação inválida!\n");
             }
             
         }
